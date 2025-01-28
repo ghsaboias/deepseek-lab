@@ -1,0 +1,164 @@
+📁 Repository Structure
+├── new-app/
+│   ├── public/
+│   │   ├── favicon.png
+│   │   ├── file.svg
+│   │   ├── globe.svg
+│   │   └── window.svg
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── api/
+│   │   │   │   ├── discord/
+│   │   │   │   │   ├── channels/
+│   │   │   │   │   │   ├── messages/
+│   │   │   │   │   │   │   └── route.ts
+│   │   │   │   │   │   └── route.ts
+│   │   │   │   │   ├── messages/
+│   │   │   │   │   │   └── route.ts
+│   │   │   │   │   └── summary/
+│   │   │   │   │       └── route.ts
+│   │   │   │   └── reports/
+│   │   │   │       ├── [id]/
+│   │   │   │       │   └── route.ts
+│   │   │   │       ├── bulk-delete/
+│   │   │   │       │   └── route.ts
+│   │   │   │       ├── bulk-generate/
+│   │   │   │       │   └── route.ts
+│   │   │   │       └── route.ts
+│   │   │   ├── channels/
+│   │   │   │   └── page.tsx
+│   │   │   ├── summarizer/
+│   │   │   │   ├── layout.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── favicon.ico
+│   │   │   ├── globals.css
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   │   ├── __tests__/
+│   │   │   │   │   ├── Button.test.tsx
+│   │   │   │   │   ├── Progress.test.tsx
+│   │   │   │   │   └── Toast.test.tsx
+│   │   │   │   ├── badges/
+│   │   │   │   │   ├── __tests__/
+│   │   │   │   │   │   ├── Badge.test.tsx
+│   │   │   │   │   │   ├── MessageCountBadge.test.tsx
+│   │   │   │   │   │   └── TimeframeBadge.test.tsx
+│   │   │   │   │   ├── Badge.tsx
+│   │   │   │   │   ├── MessageCountBadge.tsx
+│   │   │   │   │   └── TimeframeBadge.tsx
+│   │   │   │   ├── messages/
+│   │   │   │   │   ├── __tests__/
+│   │   │   │   │   │   ├── ErrorMessage.test.tsx
+│   │   │   │   │   │   └── MessageCount.test.tsx
+│   │   │   │   │   ├── ErrorMessage.tsx
+│   │   │   │   │   └── MessageCount.tsx
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Progress.tsx
+│   │   │   │   └── Toast.tsx
+│   │   │   ├── controls/
+│   │   │   │   ├── __tests__/
+│   │   │   │   │   ├── ChannelSelect.test.tsx
+│   │   │   │   │   ├── ControlsContainer.test.tsx
+│   │   │   │   │   └── TimeSelect.test.tsx
+│   │   │   │   ├── bulk-generate/
+│   │   │   │   │   ├── __tests__/
+│   │   │   │   │   │   ├── ChannelList.test.tsx
+│   │   │   │   │   │   ├── MinMessagesInput.test.tsx
+│   │   │   │   │   │   ├── ProgressDisplay.test.tsx
+│   │   │   │   │   │   └── TimeframeSelector.test.tsx
+│   │   │   │   │   ├── BulkGenerateButton.tsx
+│   │   │   │   │   ├── ChannelList.tsx
+│   │   │   │   │   ├── MinMessagesInput.tsx
+│   │   │   │   │   └── ProgressDisplay.tsx
+│   │   │   │   ├── ChannelSelect.tsx
+│   │   │   │   ├── ControlsContainer.tsx
+│   │   │   │   └── TimeSelect.tsx
+│   │   │   ├── error/
+│   │   │   │   ├── __tests__/
+│   │   │   │   │   └── ErrorBoundary.test.tsx
+│   │   │   │   └── ErrorBoundary.tsx
+│   │   │   ├── layout/
+│   │   │   │   ├── __tests__/
+│   │   │   │   │   ├── Card.test.tsx
+│   │   │   │   │   ├── Grid.test.tsx
+│   │   │   │   │   ├── Section.test.tsx
+│   │   │   │   │   ├── SplitView.test.tsx
+│   │   │   │   │   └── Stack.test.tsx
+│   │   │   │   ├── Card.tsx
+│   │   │   │   ├── Grid.tsx
+│   │   │   │   ├── Section.tsx
+│   │   │   │   ├── SplitView.tsx
+│   │   │   │   └── Stack.tsx
+│   │   │   └── reports/
+│   │   │       ├── __tests__/
+│   │   │       │   ├── RecentReports.test.tsx
+│   │   │       │   ├── ReportSkeleton.test.tsx
+│   │   │       │   └── ReportView.test.tsx
+│   │   │       ├── RecentReports.tsx
+│   │   │       ├── ReportGenerator.tsx
+│   │   │       ├── ReportSkeleton.tsx
+│   │   │       └── ReportView.tsx
+│   │   ├── context/
+│   │   │   ├── __tests__/
+│   │   │   │   └── ReportsContext.test.tsx
+│   │   │   ├── ReportsContext.tsx
+│   │   │   └── ToastContext.tsx
+│   │   ├── hooks/
+│   │   │   ├── __tests__/
+│   │   │   │   ├── useBulkGenerate.test.ts
+│   │   │   │   ├── useDisclosure.test.ts
+│   │   │   │   ├── useEventSource.test.ts
+│   │   │   │   └── useLoadingState.test.ts
+│   │   │   ├── useBulkGenerate.ts
+│   │   │   ├── useDisclosure.ts
+│   │   │   ├── useEventSource.ts
+│   │   │   ├── useLoadingState.ts
+│   │   │   └── usePerformanceMonitor.ts
+│   │   ├── services/
+│   │   │   ├── claude/
+│   │   │   │   └── client.ts
+│   │   │   ├── db/
+│   │   │   │   ├── __tests__/
+│   │   │   │   │   └── database.test.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── discord/
+│   │   │   │   └── client.ts
+│   │   │   ├── message/
+│   │   │   │   └── processor.ts
+│   │   │   ├── report/
+│   │   │   │   ├── context.ts
+│   │   │   │   ├── generator.ts
+│   │   │   │   ├── queue.ts
+│   │   │   │   └── storage.ts
+│   │   │   └── source/
+│   │   │       ├── __tests__/
+│   │   │       │   └── extractor.test.ts
+│   │   │       └── extractor.ts
+│   │   ├── test/
+│   │   │   └── testUtils.ts
+│   │   ├── types/
+│   │   │   └── better-sqlite3.d.ts
+│   │   ├── utils/
+│   │   │   ├── config.ts
+│   │   │   ├── date.ts
+│   │   │   └── performance.ts
+│   │   ├── setupTests.ts
+│   │   └── types.ts
+│   ├── .eslintrc.js
+│   ├── .gitignore
+│   ├── README.md
+│   ├── app-aiworld.service
+│   ├── eslint.config.mjs
+│   ├── jest.config.js
+│   ├── next.config.ts
+│   ├── nginx.conf
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.mjs
+│   ├── server.js
+│   ├── tailwind.config.ts
+│   └── tsconfig.json
+├── .gitignore
+└── README.md
